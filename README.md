@@ -82,13 +82,11 @@
 
 <br/>
 
-## 🐍 Contribution Snake
+## 💻 Currently Coding
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/varun05126/varun05126/output/github-contribution-grid-snake.svg"/>
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="600"/>
 </p>
-
-> ⚙️ To activate the snake animation above, add the [Platane/snk](https://github.com/Platane/snk) GitHub Action to a repo named `varun05126/varun05126` — it auto-generates that SVG on a schedule.
 
 <br/>
 
