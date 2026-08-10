@@ -319,16 +319,6 @@
 
 <br/>
 
-## 💭 Developer Quote
-
-<p align="center">
-
-  <b>"Consistency beats motivation."</b>
-
-</p>
-
-<br/>
-
 <p align="center">
   <img
     src="./assets/glass-footer.svg"
