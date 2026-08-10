@@ -85,18 +85,6 @@
 
 <br/>
 
-## 🌱 Currently Learning
-
-| 🚀 Area | 📚 Focus |
-| :---: | :--- |
-| 🐍 Python | Advanced Python & Automation |
-| 🌐 Full-Stack | Frontend + Backend Development |
-| 🤖 AI | Artificial Intelligence & Machine Learning |
-| 🧠 DSA | Data Structures & Algorithms |
-| 💻 Software Engineering | Clean & Scalable Code |
-
-<br/>
-
 <p align="center">
   <img
     src="./assets/github-stats.svg"
