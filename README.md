@@ -85,6 +85,14 @@
 
 <br/>
 
+<p align="center">
+  <img
+    src="./assets/currently-learning.svg"
+    width="900"
+    alt="Tech Stack"
+  />
+</p>
+
 <br/>
 
 <p align="center">
