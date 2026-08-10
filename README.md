@@ -87,7 +87,7 @@
 
 <p align="center">
   <img
-    src="./assets/currently-learning.svg"
+    src="/assets/currently-learning.svg"
     width="900"
     alt="Currently Learning"
   />
