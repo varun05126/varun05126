@@ -1,0 +1,496 @@
+<svg
+  width="900"
+  height="300"
+  viewBox="0 0 900 300"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a11cb"/>
+      <stop offset="50%" stop-color="#4757e6"/>
+      <stop offset="100%" stop-color="#2575fc"/>
+    </linearGradient>
+
+
+    <!-- ================= PANEL BORDER ================= -->
+
+    <linearGradient id="panelStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65">
+        <animate
+          attributeName="stop-opacity"
+          values="0.65;0.25;0.65"
+          dur="4s"
+          repeatCount="indefinite"
+        />
+      </stop>
+
+      <stop
+        offset="100%"
+        stop-color="#ffffff"
+        stop-opacity="0.10"
+      />
+
+    </linearGradient>
+
+
+    <!-- ================= SHINE ================= -->
+
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+
+    </linearGradient>
+
+
+    <!-- ================= BOKEH ================= -->
+
+    <filter
+      id="bokehBlur"
+      x="-60%"
+      y="-60%"
+      width="220%"
+      height="220%"
+    >
+      <feGaussianBlur stdDeviation="35"/>
+    </filter>
+
+
+    <!-- ================= PANEL CLIP ================= -->
+
+    <clipPath id="panelClip">
+
+      <rect
+        x="60"
+        y="30"
+        width="780"
+        height="240"
+        rx="26"
+      />
+
+    </clipPath>
+
+  </defs>
+
+
+  <!-- ================= BACKGROUND ================= -->
+
+  <rect
+    width="900"
+    height="300"
+    fill="url(#bg)"
+  />
+
+
+  <!-- ================= BOKEH ================= -->
+
+  <circle
+    cx="100"
+    cy="65"
+    r="100"
+    fill="#ffffff"
+    opacity="0.16"
+    filter="url(#bokehBlur)"
+  >
+    <animate
+      attributeName="cx"
+      values="100;140;100"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="cy"
+      values="65;40;65"
+      dur="6s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+
+  <circle
+    cx="800"
+    cy="70"
+    r="110"
+    fill="#a78bfa"
+    opacity="0.20"
+    filter="url(#bokehBlur)"
+  >
+    <animate
+      attributeName="cx"
+      values="800;765;800"
+      dur="9s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="cy"
+      values="70;100;70"
+      dur="7s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+
+  <circle
+    cx="760"
+    cy="260"
+    r="120"
+    fill="#ffffff"
+    opacity="0.12"
+    filter="url(#bokehBlur)"
+  >
+    <animate
+      attributeName="cy"
+      values="260;230;260"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+
+  <circle
+    cx="80"
+    cy="260"
+    r="85"
+    fill="#22d3ee"
+    opacity="0.15"
+    filter="url(#bokehBlur)"
+  >
+    <animate
+      attributeName="cx"
+      values="80;120;80"
+      dur="6.5s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="opacity"
+      values="0.15;0.27;0.15"
+      dur="5s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+
+  <!-- ================= GLASS PANEL ================= -->
+
+  <rect
+    x="60"
+    y="30"
+    width="780"
+    height="240"
+    rx="26"
+    fill="#ffffff"
+    opacity="0.10"
+  />
+
+  <rect
+    x="60"
+    y="30"
+    width="780"
+    height="240"
+    rx="26"
+    fill="none"
+    stroke="url(#panelStroke)"
+    stroke-width="1.5"
+  />
+
+
+  <!-- ================= SHIMMER ================= -->
+
+  <g clip-path="url(#panelClip)">
+
+    <rect
+      x="-200"
+      y="30"
+      width="150"
+      height="240"
+      fill="url(#shine)"
+      transform="skewX(-20)"
+    >
+      <animate
+        attributeName="x"
+        values="-200;900"
+        dur="5s"
+        repeatCount="indefinite"
+      />
+    </rect>
+
+  </g>
+
+
+  <!-- ================= TITLE ================= -->
+
+  <text
+    x="100"
+    y="72"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="1"
+  >
+    🔗 CODING PROFILES
+  </text>
+
+
+  <line
+    x1="100"
+    y1="88"
+    x2="800"
+    y2="88"
+    stroke="#ffffff"
+    stroke-opacity="0.20"
+    stroke-width="1"
+  />
+
+
+  <!-- ================= GITHUB ================= -->
+
+  <g>
+    <circle
+      cx="145"
+      cy="135"
+      r="25"
+      fill="#ffffff"
+      opacity="0.12"
+    />
+
+    <text
+      x="145"
+      y="143"
+      text-anchor="middle"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="25"
+    >
+      🐙
+    </text>
+
+    <text
+      x="190"
+      y="132"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="15"
+      font-weight="700"
+      fill="#ffffff"
+    >
+      GitHub
+    </text>
+
+    <text
+      x="190"
+      y="153"
+      font-family="monospace"
+      font-size="12"
+      fill="#dcd9ff"
+    >
+      varun05126
+    </text>
+  </g>
+
+
+  <!-- ================= GEEKSFORGEEKS ================= -->
+
+  <g>
+    <circle
+      cx="465"
+      cy="135"
+      r="25"
+      fill="#ffffff"
+      opacity="0.12"
+    />
+
+    <text
+      x="465"
+      y="143"
+      text-anchor="middle"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="22"
+    >
+      G
+    </text>
+
+    <text
+      x="510"
+      y="132"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="15"
+      font-weight="700"
+      fill="#ffffff"
+    >
+      GeeksforGeeks
+    </text>
+
+    <text
+      x="510"
+      y="153"
+      font-family="monospace"
+      font-size="12"
+      fill="#dcd9ff"
+    >
+      varunmalthumkar
+    </text>
+  </g>
+
+
+  <!-- ================= HACKERRANK ================= -->
+
+  <g>
+    <circle
+      cx="145"
+      cy="205"
+      r="25"
+      fill="#ffffff"
+      opacity="0.12"
+    />
+
+    <text
+      x="145"
+      y="213"
+      text-anchor="middle"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="21"
+      font-weight="700"
+      fill="#ffffff"
+    >
+      H
+    </text>
+
+    <text
+      x="190"
+      y="202"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="15"
+      font-weight="700"
+      fill="#ffffff"
+    >
+      HackerRank
+    </text>
+
+    <text
+      x="190"
+      y="223"
+      font-family="monospace"
+      font-size="12"
+      fill="#dcd9ff"
+    >
+      malthumkarvarun
+    </text>
+  </g>
+
+
+  <!-- ================= LEETCODE ================= -->
+
+  <g>
+    <circle
+      cx="465"
+      cy="205"
+      r="25"
+      fill="#ffffff"
+      opacity="0.12"
+    />
+
+    <text
+      x="465"
+      y="213"
+      text-anchor="middle"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="20"
+      font-weight="700"
+      fill="#ffffff"
+    >
+      LC
+    </text>
+
+    <text
+      x="510"
+      y="202"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="15"
+      font-weight="700"
+      fill="#ffffff"
+    >
+      LeetCode
+    </text>
+
+    <text
+      x="510"
+      y="223"
+      font-family="monospace"
+      font-size="12"
+      fill="#dcd9ff"
+    >
+      varun_5126
+    </text>
+  </g>
+
+
+  <!-- ================= CODECHEF ================= -->
+
+  <g>
+    <circle
+      cx="680"
+      cy="170"
+      r="25"
+      fill="#ffffff"
+      opacity="0.12"
+    />
+
+    <text
+      x="680"
+      y="178"
+      text-anchor="middle"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="20"
+      font-weight="700"
+      fill="#ffffff"
+    >
+      CC
+    </text>
+
+    <text
+      x="720"
+      y="168"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="15"
+      font-weight="700"
+      fill="#ffffff"
+    >
+      CodeChef
+    </text>
+
+    <text
+      x="720"
+      y="189"
+      font-family="monospace"
+      font-size="12"
+      fill="#dcd9ff"
+    >
+      varun_05126
+    </text>
+  </g>
+
+
+  <!-- ================= FOOTNOTE ================= -->
+
+  <text
+    x="450"
+    y="255"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="12"
+    fill="#ffffff"
+    text-anchor="middle"
+    opacity="0.70"
+    letter-spacing="1"
+  >
+    CODE • SOLVE • LEARN • IMPROVE
+  </text>
+
+</svg>
