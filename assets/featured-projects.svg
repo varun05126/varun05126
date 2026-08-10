@@ -1,0 +1,602 @@
+<svg
+  width="900"
+  height="430"
+  viewBox="0 0 900 430"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a11cb"/>
+      <stop offset="50%" stop-color="#4757e6"/>
+      <stop offset="100%" stop-color="#2575fc"/>
+    </linearGradient>
+
+
+    <!-- ================= PANEL BORDER ================= -->
+
+    <linearGradient id="panelStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+
+      <stop
+        offset="0%"
+        stop-color="#ffffff"
+        stop-opacity="0.65"
+      >
+        <animate
+          attributeName="stop-opacity"
+          values="0.65;0.25;0.65"
+          dur="4s"
+          repeatCount="indefinite"
+        />
+      </stop>
+
+      <stop
+        offset="100%"
+        stop-color="#ffffff"
+        stop-opacity="0.10"
+      />
+
+    </linearGradient>
+
+
+    <!-- ================= SHINE ================= -->
+
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+
+    </linearGradient>
+
+
+    <!-- ================= PROJECT CARD ================= -->
+
+    <linearGradient id="projectCard" x1="0%" y1="0%" x2="100%" y2="100%">
+
+      <stop
+        offset="0%"
+        stop-color="#ffffff"
+        stop-opacity="0.13"
+      />
+
+      <stop
+        offset="100%"
+        stop-color="#ffffff"
+        stop-opacity="0.05"
+      />
+
+    </linearGradient>
+
+
+    <!-- ================= BOKEH ================= -->
+
+    <filter
+      id="bokehBlur"
+      x="-60%"
+      y="-60%"
+      width="220%"
+      height="220%"
+    >
+      <feGaussianBlur stdDeviation="35"/>
+    </filter>
+
+
+    <!-- ================= PANEL CLIP ================= -->
+
+    <clipPath id="panelClip">
+
+      <rect
+        x="60"
+        y="30"
+        width="780"
+        height="370"
+        rx="26"
+      />
+
+    </clipPath>
+
+  </defs>
+
+
+  <!-- ================================================= -->
+  <!--                    BACKGROUND                     -->
+  <!-- ================================================= -->
+
+  <rect
+    width="900"
+    height="430"
+    fill="url(#bg)"
+  />
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 1                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="100"
+    cy="70"
+    r="105"
+    fill="#ffffff"
+    opacity="0.16"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="100;140;100"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="cy"
+      values="70;40;70"
+      dur="6s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 2                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="800"
+    cy="80"
+    r="115"
+    fill="#a78bfa"
+    opacity="0.20"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="800;765;800"
+      dur="9s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="cy"
+      values="80;110;80"
+      dur="7s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 3                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="760"
+    cy="390"
+    r="130"
+    fill="#ffffff"
+    opacity="0.12"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cy"
+      values="390;350;390"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 4                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="80"
+    cy="380"
+    r="90"
+    fill="#22d3ee"
+    opacity="0.15"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="80;120;80"
+      dur="6.5s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="opacity"
+      values="0.15;0.27;0.15"
+      dur="5s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                   GLASS PANEL                    -->
+  <!-- ================================================= -->
+
+  <rect
+    x="60"
+    y="30"
+    width="780"
+    height="370"
+    rx="26"
+    fill="#ffffff"
+    opacity="0.10"
+  />
+
+
+  <rect
+    x="60"
+    y="30"
+    width="780"
+    height="370"
+    rx="26"
+    fill="none"
+    stroke="url(#panelStroke)"
+    stroke-width="1.5"
+  />
+
+
+  <!-- ================================================= -->
+  <!--                     SHIMMER                      -->
+  <!-- ================================================= -->
+
+  <g clip-path="url(#panelClip)">
+
+    <rect
+      x="-200"
+      y="30"
+      width="150"
+      height="370"
+      fill="url(#shine)"
+      transform="skewX(-20)"
+    >
+
+      <animate
+        attributeName="x"
+        values="-200;900"
+        dur="5s"
+        repeatCount="indefinite"
+      />
+
+    </rect>
+
+  </g>
+
+
+  <!-- ================================================= -->
+  <!--                       TITLE                       -->
+  <!-- ================================================= -->
+
+  <text
+    x="100"
+    y="72"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="1"
+  >
+    🚀 FEATURED PROJECTS
+  </text>
+
+
+  <line
+    x1="100"
+    y1="88"
+    x2="800"
+    y2="88"
+    stroke="#ffffff"
+    stroke-opacity="0.20"
+    stroke-width="1"
+  />
+
+
+  <!-- ================================================= -->
+  <!--                    PROJECT 1                      -->
+  <!-- ================================================= -->
+
+  <rect
+    x="90"
+    y="110"
+    width="220"
+    height="235"
+    rx="18"
+    fill="url(#projectCard)"
+    stroke="#ffffff"
+    stroke-opacity="0.16"
+  />
+
+
+  <circle
+    cx="120"
+    cy="140"
+    r="18"
+    fill="#ffffff"
+    opacity="0.12"
+  />
+
+  <text
+    x="120"
+    y="147"
+    text-anchor="middle"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="18"
+  >
+    ♻️
+  </text>
+
+
+  <text
+    x="105"
+    y="180"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="17"
+    font-weight="700"
+    fill="#ffffff"
+  >
+    E-WASTE
+  </text>
+
+
+  <text
+    x="105"
+    y="207"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="12"
+    fill="#dcd9ff"
+  >
+    E-waste management
+  </text>
+
+  <text
+    x="105"
+    y="225"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="12"
+    fill="#dcd9ff"
+  >
+    and recycling project
+  </text>
+
+
+  <text
+    x="105"
+    y="260"
+    font-family="monospace"
+    font-size="11"
+    fill="#ffffff"
+  >
+    Web • Database
+  </text>
+
+
+  <text
+    x="105"
+    y="290"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="12"
+    font-weight="600"
+    fill="#ffffff"
+  >
+    VIEW REPOSITORY →
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                    PROJECT 2                      -->
+  <!-- ================================================= -->
+
+  <rect
+    x="340"
+    y="110"
+    width="220"
+    height="235"
+    rx="18"
+    fill="url(#projectCard)"
+    stroke="#ffffff"
+    stroke-opacity="0.16"
+  />
+
+
+  <circle
+    cx="370"
+    cy="140"
+    r="18"
+    fill="#ffffff"
+    opacity="0.12"
+  />
+
+  <text
+    x="370"
+    y="147"
+    text-anchor="middle"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="18"
+  >
+    📚
+  </text>
+
+
+  <text
+    x="355"
+    y="180"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="17"
+    font-weight="700"
+    fill="#ffffff"
+  >
+    STUDYSTACK
+  </text>
+
+
+  <text
+    x="355"
+    y="207"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="12"
+    fill="#dcd9ff"
+  >
+    Study resources and
+  </text>
+
+  <text
+    x="355"
+    y="225"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="12"
+    fill="#dcd9ff"
+  >
+    learning platform
+  </text>
+
+
+  <text
+    x="355"
+    y="260"
+    font-family="monospace"
+    font-size="11"
+    fill="#ffffff"
+  >
+    Web • JavaScript
+  </text>
+
+
+  <text
+    x="355"
+    y="290"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="12"
+    font-weight="600"
+    fill="#ffffff"
+  >
+    VIEW REPOSITORY →
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                    PROJECT 3                      -->
+  <!-- ================================================= -->
+
+  <rect
+    x="590"
+    y="110"
+    width="220"
+    height="235"
+    rx="18"
+    fill="url(#projectCard)"
+    stroke="#ffffff"
+    stroke-opacity="0.16"
+  />
+
+
+  <circle
+    cx="620"
+    cy="140"
+    r="18"
+    fill="#ffffff"
+    opacity="0.12"
+  />
+
+  <text
+    x="620"
+    y="147"
+    text-anchor="middle"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="18"
+  >
+    💡
+  </text>
+
+
+  <text
+    x="605"
+    y="180"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="17"
+    font-weight="700"
+    fill="#ffffff"
+  >
+    PROJECT THREE
+  </text>
+
+
+  <text
+    x="605"
+    y="207"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="12"
+    fill="#dcd9ff"
+  >
+    Your next project
+  </text>
+
+  <text
+    x="605"
+    y="225"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="12"
+    fill="#dcd9ff"
+  >
+    can be featured here
+  </text>
+
+
+  <text
+    x="605"
+    y="260"
+    font-family="monospace"
+    font-size="11"
+    fill="#ffffff"
+  >
+    Python • Java • Web
+  </text>
+
+
+  <text
+    x="605"
+    y="290"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="12"
+    font-weight="600"
+    fill="#ffffff"
+  >
+    VIEW REPOSITORY →
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                     FOOTNOTE                      -->
+  <!-- ================================================= -->
+
+  <text
+    x="450"
+    y="380"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="12"
+    fill="#ffffff"
+    text-anchor="middle"
+    opacity="0.70"
+    letter-spacing="1"
+  >
+    BUILD • SOLVE • DEPLOY
+  </text>
+
+
+</svg>
