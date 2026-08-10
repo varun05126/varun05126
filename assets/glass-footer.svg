@@ -5,21 +5,41 @@
       <stop offset="100%" stop-color="#6a11cb"/>
     </linearGradient>
     <linearGradient id="panelStrokeF" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5">
+        <animate attributeName="stop-opacity" values="0.5;0.2;0.5" dur="4s" repeatCount="indefinite"/>
+      </stop>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="shineF" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
     <filter id="bokehBlurF" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="30"/>
     </filter>
+    <clipPath id="panelClipF">
+      <rect x="80" y="35" width="740" height="70" rx="20"/>
+    </clipPath>
   </defs>
 
   <rect width="900" height="140" fill="url(#bgF)"/>
 
-  <circle cx="150" cy="20" r="70" fill="#ffffff" opacity="0.16" filter="url(#bokehBlurF)"/>
-  <circle cx="750" cy="120" r="90" fill="#22d3ee" opacity="0.18" filter="url(#bokehBlurF)"/>
+  <circle cx="150" cy="20" r="70" fill="#ffffff" opacity="0.16" filter="url(#bokehBlurF)">
+    <animate attributeName="cx" values="150;190;150" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="750" cy="120" r="90" fill="#22d3ee" opacity="0.18" filter="url(#bokehBlurF)">
+    <animate attributeName="cy" values="120;95;120" dur="6s" repeatCount="indefinite"/>
+  </circle>
 
   <rect x="80" y="35" width="740" height="70" rx="20" fill="#ffffff" opacity="0.10"/>
   <rect x="80" y="35" width="740" height="70" rx="20" fill="none" stroke="url(#panelStrokeF)" stroke-width="1.2"/>
+
+  <g clip-path="url(#panelClipF)">
+    <rect x="-150" y="35" width="120" height="70" fill="url(#shineF)" transform="skewX(-20)">
+      <animate attributeName="x" values="-150;900" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
 
   <text x="450" y="78" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="1">
     Thanks for stopping by ✨ Let's build something great
