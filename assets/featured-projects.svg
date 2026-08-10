@@ -46,9 +46,23 @@
 
     <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
 
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.28"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop
+        offset="0%"
+        stop-color="#ffffff"
+        stop-opacity="0"
+      />
+
+      <stop
+        offset="50%"
+        stop-color="#ffffff"
+        stop-opacity="0.28"
+      />
+
+      <stop
+        offset="100%"
+        stop-color="#ffffff"
+        stop-opacity="0"
+      />
 
     </linearGradient>
 
@@ -72,7 +86,7 @@
     </linearGradient>
 
 
-    <!-- ================= BOKEH ================= -->
+    <!-- ================= BOKEH BLUR ================= -->
 
     <filter
       id="bokehBlur"
@@ -351,7 +365,7 @@
     font-weight="700"
     fill="#ffffff"
   >
-    E-WASTE
+    EWASTE
   </text>
 
 
@@ -364,6 +378,7 @@
   >
     E-waste management
   </text>
+
 
   <text
     x="105"
@@ -456,6 +471,7 @@
     Study resources and
   </text>
 
+
   <text
     x="355"
     y="225"
@@ -521,7 +537,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="18"
   >
-    💡
+    🚀
   </text>
 
 
@@ -533,7 +549,7 @@
     font-weight="700"
     fill="#ffffff"
   >
-    PROJECT THREE
+    CAPSTONE001
   </text>
 
 
@@ -544,8 +560,9 @@
     font-size="12"
     fill="#dcd9ff"
   >
-    Your next project
+    Capstone project
   </text>
+
 
   <text
     x="605"
@@ -554,7 +571,7 @@
     font-size="12"
     fill="#dcd9ff"
   >
-    can be featured here
+    development project
   </text>
 
 
