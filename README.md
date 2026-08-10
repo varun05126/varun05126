@@ -84,8 +84,6 @@
   <img src="https://raw.githubusercontent.com/varun05126/varun05126/main/profile-3d-contrib/profile-night-rainbow.svg"/>
 </p>
 
-> ⚙️ To activate the rotating 3D graph above, add the [yoshi389111/github-profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib) GitHub Action to a repo named `varun05126/varun05126` — it auto-generates that SVG on a daily schedule.
-
 <br/>
 
 ## 📬 How to Reach Me
