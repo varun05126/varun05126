@@ -9,14 +9,22 @@
 
 <br/>
 
+<img src = "./assets/typing.svg" width = "100%"/>
+<!--
+---
+
 ## 👨‍💻 About Me
 
-- 💬 Ask me about **Python, C, Java, Web Development, Data Structures & Algorithms**
-- 🌱 Currently learning **Full-Stack Development & Advanced Python**
-- 🎯 Interested in **AI, software engineering, and real-world problem solving**
-- 🏫 Student at **Vardhaman College of Engineering, Telangana**
-- ⚡ Fun fact: *"Consistency beats motivation."*
+```text
+🎓 Student @ Vardhaman College of Engineering, Telangana
+💻 Interested in Software Engineering & Full-Stack Development
+🐍 Currently improving my Advanced Python skills
+🤖 Exploring Artificial Intelligence & Machine Learning
+🧠 Passionate about Data Structures & Algorithms
+🚀 Love building practical, real-world projects
+⚡ "Consistency beats motivation."
 
+-->
 <br/>
 
 ## 🔗 Coding Profiles & Links
