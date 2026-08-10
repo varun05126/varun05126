@@ -1,129 +1,399 @@
-<svg width="800" height="270" viewBox="0 0 800 270" xmlns="http://www.w3.org/2000/svg">
+<svg
+  width="900"
+  height="300"
+  viewBox="0 0 900 300"
+  xmlns="http://www.w3.org/2000/svg"
+>
 
   <defs>
-    <!-- Typewriter clipping areas -->
-    <clipPath id="clipL1">
-      <rect x="30" y="25" width="0" height="34">
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a11cb"/>
+      <stop offset="50%" stop-color="#4757e6"/>
+      <stop offset="100%" stop-color="#2575fc"/>
+    </linearGradient>
+
+
+    <!-- ================= GLASS BORDER ================= -->
+
+    <linearGradient id="panelStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65">
+
         <animate
-          attributeName="width"
-          values="0;740;740;0"
-          keyTimes="0;0.1333;0.90;1"
-          dur="12s"
-          repeatCount="indefinite"/>
-      </rect>
+          attributeName="stop-opacity"
+          values="0.65;0.25;0.65"
+          dur="4s"
+          repeatCount="indefinite"
+        />
+
+      </stop>
+
+      <stop
+        offset="100%"
+        stop-color="#ffffff"
+        stop-opacity="0.10"
+      />
+
+    </linearGradient>
+
+
+    <!-- ================= SHINE ================= -->
+
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+
+      <stop
+        offset="0%"
+        stop-color="#ffffff"
+        stop-opacity="0"
+      />
+
+      <stop
+        offset="50%"
+        stop-color="#ffffff"
+        stop-opacity="0.30"
+      />
+
+      <stop
+        offset="100%"
+        stop-color="#ffffff"
+        stop-opacity="0"
+      />
+
+    </linearGradient>
+
+
+    <!-- ================= BOKEH BLUR ================= -->
+
+    <filter
+      id="bokehBlur"
+      x="-60%"
+      y="-60%"
+      width="220%"
+      height="220%"
+    >
+
+      <feGaussianBlur stdDeviation="35"/>
+
+    </filter>
+
+
+    <!-- ================= PANEL CLIP ================= -->
+
+    <clipPath id="panelClip">
+
+      <rect
+        x="60"
+        y="35"
+        width="780"
+        height="230"
+        rx="26"
+      />
+
     </clipPath>
 
-    <clipPath id="clipL2">
-      <rect x="30" y="70" width="0" height="34">
-        <animate
-          attributeName="width"
-          values="0;0;600;600;0"
-          keyTimes="0;0.1667;0.30;0.90;1"
-          dur="12s"
-          repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
-
-    <clipPath id="clipL3">
-      <rect x="30" y="115" width="0" height="34">
-        <animate
-          attributeName="width"
-          values="0;0;700;700;0"
-          keyTimes="0;0.3333;0.4667;0.90;1"
-          dur="12s"
-          repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
-
-    <clipPath id="clipL4">
-      <rect x="30" y="160" width="0" height="34">
-        <animate
-          attributeName="width"
-          values="0;0;560;560;0"
-          keyTimes="0;0.50;0.6333;0.90;1"
-          dur="12s"
-          repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
-
-    <clipPath id="clipL5">
-      <rect x="30" y="205" width="0" height="34">
-        <animate
-          attributeName="width"
-          values="0;0;430;430;0"
-          keyTimes="0;0.6667;0.80;0.90;1"
-          dur="12s"
-          repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
   </defs>
 
-  <!-- Background -->
-  <rect width="800" height="270" rx="15" fill="#0d1117"/>
 
-  <!-- Line 1 -->
-  <g clip-path="url(#clipL1)">
-    <text
-      x="30"
-      y="50"
-      fill="#58a6ff"
-      font-family="monospace"
-      font-size="22"
-      font-weight="600">
-      💬 Ask me about Python, C, Java &amp; Web Development
-    </text>
+  <!-- ================================================= -->
+  <!--                    BACKGROUND                     -->
+  <!-- ================================================= -->
+
+  <rect
+    width="900"
+    height="300"
+    fill="url(#bg)"
+  />
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 1                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="100"
+    cy="70"
+    r="100"
+    fill="#ffffff"
+    opacity="0.16"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="100;135;100"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="cy"
+      values="70;45;70"
+      dur="6s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 2                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="800"
+    cy="70"
+    r="110"
+    fill="#a78bfa"
+    opacity="0.20"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="800;765;800"
+      dur="9s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="cy"
+      values="70;95;70"
+      dur="7s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 3                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="760"
+    cy="250"
+    r="120"
+    fill="#ffffff"
+    opacity="0.12"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cy"
+      values="250;225;250"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 4                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="80"
+    cy="245"
+    r="85"
+    fill="#22d3ee"
+    opacity="0.15"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="80;120;80"
+      dur="6.5s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="opacity"
+      values="0.15;0.27;0.15"
+      dur="5s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                   GLASS PANEL                    -->
+  <!-- ================================================= -->
+
+  <rect
+    x="60"
+    y="35"
+    width="780"
+    height="230"
+    rx="26"
+    fill="#ffffff"
+    opacity="0.10"
+  />
+
+
+  <rect
+    x="60"
+    y="35"
+    width="780"
+    height="230"
+    rx="26"
+    fill="none"
+    stroke="url(#panelStroke)"
+    stroke-width="1.5"
+  />
+
+
+  <!-- ================================================= -->
+  <!--                     SHIMMER                      -->
+  <!-- ================================================= -->
+
+  <g clip-path="url(#panelClip)">
+
+    <rect
+      x="-200"
+      y="35"
+      width="150"
+      height="230"
+      fill="url(#shine)"
+      transform="skewX(-20)"
+    >
+
+      <animate
+        attributeName="x"
+        values="-200;900"
+        dur="5s"
+        repeatCount="indefinite"
+      />
+
+    </rect>
+
   </g>
 
-  <!-- Line 2 -->
-  <g clip-path="url(#clipL2)">
-    <text
-      x="30"
-      y="95"
-      fill="#7ee787"
-      font-family="monospace"
-      font-size="22"
-      font-weight="600">
-      🌱 Currently learning Full-Stack
-    </text>
-  </g>
 
-  <!-- Line 3 -->
-  <g clip-path="url(#clipL3)">
-    <text
-      x="30"
-      y="140"
-      fill="#d2a8ff"
-      font-family="monospace"
-      font-size="22"
-      font-weight="600">
-      🎯 Interested in AI &amp; Real-World Problem Solving
-    </text>
-  </g>
+  <!-- ================================================= -->
+  <!--                  TERMINAL HEADER                 -->
+  <!-- ================================================= -->
 
-  <!-- Line 4 -->
-  <g clip-path="url(#clipL4)">
-    <text
-      x="30"
-      y="185"
-      fill="#ffa657"
-      font-family="monospace"
-      font-size="22"
-      font-weight="600">
-      🏫 Student at Vardhaman College, Hyderabad
-    </text>
-  </g>
+  <circle
+    cx="90"
+    cy="62"
+    r="5"
+    fill="#ff6b6b"
+  />
 
-  <!-- Line 5 -->
-  <g clip-path="url(#clipL5)">
-    <text
-      x="30"
-      y="230"
-      fill="#f0f6fc"
-      font-family="monospace"
-      font-size="22"
-      font-weight="600">
-      ⚡ Consistency beats motivation.
-    </text>
-  </g>
+  <circle
+    cx="108"
+    cy="62"
+    r="5"
+    fill="#ffd93d"
+  />
+
+  <circle
+    cx="126"
+    cy="62"
+    r="5"
+    fill="#6bff95"
+  />
+
+
+  <text
+    x="155"
+    y="67"
+    font-family="monospace"
+    font-size="12"
+    fill="#e9e7ff"
+    opacity="0.65"
+  >
+    ~/varun
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                      TITLE                       -->
+  <!-- ================================================= -->
+
+  <text
+    x="450"
+    y="105"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="17"
+    font-weight="600"
+    fill="#ffffff"
+    text-anchor="middle"
+    letter-spacing="2"
+    opacity="0.85"
+  >
+    CURRENTLY BUILDING &amp; LEARNING
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                     LINE 1                       -->
+  <!-- ================================================= -->
+
+  <text
+    x="115"
+    y="145"
+    font-family="monospace"
+    font-size="19"
+    font-weight="600"
+    fill="#ffffff"
+  >
+    &gt; 💻 Software Developer
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                     LINE 2                       -->
+  <!-- ================================================= -->
+
+  <text
+    x="115"
+    y="177"
+    font-family="monospace"
+    font-size="19"
+    font-weight="600"
+    fill="#e9e7ff"
+  >
+    &gt; 🐍 Python • C • Java
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                     LINE 3                       -->
+  <!-- ================================================= -->
+
+  <text
+    x="115"
+    y="209"
+    font-family="monospace"
+    font-size="19"
+    font-weight="600"
+    fill="#e9e7ff"
+  >
+    &gt; 🌐 Full-Stack Development
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                     LINE 4                       -->
+  <!-- ================================================= -->
+
+  <text
+    x="115"
+    y="241"
+    font-family="monospace"
+    font-size="19"
+    font-weight="600"
+    fill="#e9e7ff"
+  >
+    &gt; 🤖 AI &amp; Machine Learning
+  </text>
+
 
 </svg>
