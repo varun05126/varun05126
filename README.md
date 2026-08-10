@@ -85,13 +85,15 @@
 
 <br/>
 
-<p align="center">
-  <img
-    src="./assets/currently-learning.svg"
-    width="900"
-    alt="Currently Learning"
-  />
-</p>
+## 🌱 Currently Learning
+
+| 🚀 Area | 📚 Focus |
+| :---: | :--- |
+| 🐍 Python | Advanced Python & Automation |
+| 🌐 Full-Stack | Frontend + Backend Development |
+| 🤖 AI | Artificial Intelligence & Machine Learning |
+| 🧠 DSA | Data Structures & Algorithms |
+| 💻 Software Engineering | Clean & Scalable Code |
 
 <br/>
 
@@ -106,7 +108,7 @@
 <p align="center">
 
   <img
-    src="https://github-readme-stats.vercel.app/api?username=varun05126&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000"
+    src="https://github-readme-stats.vercel.app/api?username=varun05126&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&count_private=true&include_all_commits=true"
     height="180"
     alt="GitHub Stats"
   />
@@ -183,6 +185,78 @@
     width="900"
     alt="3D GitHub Contribution Graph"
   />
+
+</p>
+
+<br/>
+
+## 📊 Profile Overview
+
+<p align="center">
+
+  <a href="https://github.com/varun05126">
+    <img
+      src="https://komarev.com/ghpvc/?username=varun05126&label=Profile%20Views&color=6a11cb&style=for-the-badge"
+      alt="Profile Views"
+    />
+  </a>
+
+  <a href="https://github.com/varun05126?tab=followers">
+    <img
+      src="https://img.shields.io/github/followers/varun05126?label=Followers&style=for-the-badge&color=4757e6"
+      alt="GitHub Followers"
+    />
+  </a>
+
+  <a href="https://github.com/varun05126?tab=following">
+    <img
+      src="https://img.shields.io/github/following/varun05126?label=Following&style=for-the-badge&color=2575fc"
+      alt="GitHub Following"
+    />
+  </a>
+
+</p>
+
+<p align="center">
+
+  <a href="https://github.com/varun05126?tab=repositories">
+    <img
+      src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fvarun05126&query=%24.public_repos&label=Public%20Repos&style=for-the-badge&color=6a11cb"
+      alt="Public Repositories"
+    />
+  </a>
+
+  <a href="https://github.com/varun05126?tab=repositories">
+    <img
+      src="https://img.shields.io/github/stars/varun05126?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&label=Total%20Stars&color=4757e6"
+      alt="Total Stars"
+    />
+  </a>
+
+  <a href="https://github.com/varun05126">
+    <img
+      src="https://img.shields.io/github/commit-activity/y/varun05126?style=for-the-badge&label=Commit%20Activity&color=2575fc"
+      alt="Commit Activity"
+    />
+  </a>
+
+</p>
+
+<p align="center">
+
+  <a href="https://github.com/varun05126">
+    <img
+      src="https://img.shields.io/github/last-commit/varun05126/varun05126?style=for-the-badge&label=Last%20Update&color=6a11cb"
+      alt="Last Update"
+    />
+  </a>
+
+  <a href="https://github.com/varun05126?tab=repositories">
+    <img
+      src="https://img.shields.io/github/repo-size/varun05126/varun05126?style=for-the-badge&label=Profile%20Repo%20Size&color=4757e6"
+      alt="Profile Repository Size"
+    />
+  </a>
 
 </p>
 
