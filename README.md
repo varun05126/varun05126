@@ -85,13 +85,15 @@
 
 <br/>
 
-<p align="center">
-  <img
-    src="./assets/currently-learning.svg"
-    width="900"
-    alt="Tech Stack"
-  />
-</p>
+## 🌱 Currently Learning
+
+| 🚀 Area | 📚 Focus |
+| :---: | :--- |
+| 🐍 Python | Advanced Python & Automation |
+| 🌐 Full-Stack | Frontend + Backend Development |
+| 🤖 AI | Artificial Intelligence & Machine Learning |
+| 🧠 DSA | Data Structures & Algorithms |
+| 💻 Software Engineering | Clean & Scalable Code |
 
 <br/>
 
@@ -106,7 +108,7 @@
 <p align="center">
 
   <img
-    src="https://github-readme-stats.vercel.app/api?username=varun05126&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&count_private=true&include_all_commits=true"
+    src="https://github-readme-stats.vercel.app/api?username=varun05126&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000"
     height="180"
     alt="GitHub Stats"
   />
@@ -127,7 +129,6 @@
 
   <img
     src="https://github-readme-stats.vercel.app/api/top-langs/?username=varun05126&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000"
-    height="180"
     alt="Most Used Languages"
   />
 
@@ -194,22 +195,22 @@
 
   <a href="https://github.com/varun05126">
     <img
-      src="https://komarev.com/ghpvc/?username=varun05126&label=Profile%20Views&color=6a11cb&style=for-the-badge"
+      src="https://komarev.com/ghpvc/?username=varun05126&label=PROFILE%20VIEWS&color=6a11cb&style=for-the-badge"
       alt="Profile Views"
     />
   </a>
 
   <a href="https://github.com/varun05126?tab=followers">
     <img
-      src="https://img.shields.io/github/followers/varun05126?label=Followers&style=for-the-badge&color=4757e6"
-      alt="GitHub Followers"
+      src="https://img.shields.io/github/followers/varun05126?label=FOLLOWERS&style=for-the-badge&color=4757e6"
+      alt="Followers"
     />
   </a>
 
   <a href="https://github.com/varun05126?tab=following">
     <img
-      src="https://img.shields.io/github/following/varun05126?label=Following&style=for-the-badge&color=2575fc"
-      alt="GitHub Following"
+      src="https://img.shields.io/github/following/varun05126?label=FOLLOWING&style=for-the-badge&color=2575fc"
+      alt="Following"
     />
   </a>
 
@@ -219,12 +220,35 @@
 
   <a href="https://github.com/varun05126?tab=repositories">
     <img
-      src="https://img.shields.io/github/stars/varun05126?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&label=Total%20Stars&color=4757e6"
+      src="https://img.shields.io/github/repos/varun05126?label=PUBLIC%20REPOS&style=for-the-badge&color=6a11cb"
+      alt="Public Repositories"
+    />
+  </a>
+
+  <a href="https://github.com/varun05126?tab=repositories">
+    <img
+      src="https://img.shields.io/github/stars/varun05126?style=for-the-badge&label=TOTAL%20STARS&color=4757e6"
       alt="Total Stars"
     />
   </a>
 
+  <a href="https://github.com/varun05126">
+    <img
+      src="https://img.shields.io/github/commit-activity/y/varun05126?style=for-the-badge&label=COMMIT%20ACTIVITY&color=2575fc"
+      alt="Commit Activity"
+    />
+  </a>
+
 </p>
+
+<p align="center">
+
+  <a href="https://github.com/varun05126">
+    <img
+      src="https://img.shields.io/github/last-commit/varun05126/varun05126?style=for-the-badge&label=LAST%20UPDATE&color=6a11cb"
+      alt="Last Update"
+    />
+  </a>
 
 </p>
 
@@ -306,6 +330,14 @@
 </p>
 
 <br/>
+
+## 💭 Developer Quote
+
+<p align="center">
+
+  <b>"Consistency beats motivation."</b>
+
+</p>
 
 <br/>
 
