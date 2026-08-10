@@ -1,0 +1,573 @@
+<svg
+  width="900"
+  height="390"
+  viewBox="0 0 900 390"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a11cb"/>
+      <stop offset="50%" stop-color="#4757e6"/>
+      <stop offset="100%" stop-color="#2575fc"/>
+    </linearGradient>
+
+
+    <!-- ================= PANEL BORDER ================= -->
+
+    <linearGradient id="panelStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+
+      <stop
+        offset="0%"
+        stop-color="#ffffff"
+        stop-opacity="0.65"
+      >
+        <animate
+          attributeName="stop-opacity"
+          values="0.65;0.25;0.65"
+          dur="4s"
+          repeatCount="indefinite"
+        />
+      </stop>
+
+      <stop
+        offset="100%"
+        stop-color="#ffffff"
+        stop-opacity="0.10"
+      />
+
+    </linearGradient>
+
+
+    <!-- ================= SHINE ================= -->
+
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+
+      <stop
+        offset="0%"
+        stop-color="#ffffff"
+        stop-opacity="0"
+      />
+
+      <stop
+        offset="50%"
+        stop-color="#ffffff"
+        stop-opacity="0.28"
+      />
+
+      <stop
+        offset="100%"
+        stop-color="#ffffff"
+        stop-opacity="0"
+      />
+
+    </linearGradient>
+
+
+    <!-- ================= BOKEH ================= -->
+
+    <filter
+      id="bokehBlur"
+      x="-60%"
+      y="-60%"
+      width="220%"
+      height="220%"
+    >
+      <feGaussianBlur stdDeviation="35"/>
+    </filter>
+
+
+    <!-- ================= PANEL CLIP ================= -->
+
+    <clipPath id="panelClip">
+
+      <rect
+        x="60"
+        y="30"
+        width="780"
+        height="330"
+        rx="26"
+      />
+
+    </clipPath>
+
+  </defs>
+
+
+  <!-- ================================================= -->
+  <!--                    BACKGROUND                     -->
+  <!-- ================================================= -->
+
+  <rect
+    width="900"
+    height="390"
+    fill="url(#bg)"
+  />
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 1                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="100"
+    cy="70"
+    r="105"
+    fill="#ffffff"
+    opacity="0.16"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="100;140;100"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="cy"
+      values="70;40;70"
+      dur="6s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 2                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="800"
+    cy="75"
+    r="115"
+    fill="#a78bfa"
+    opacity="0.20"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="800;765;800"
+      dur="9s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="cy"
+      values="75;105;75"
+      dur="7s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 3                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="760"
+    cy="350"
+    r="130"
+    fill="#ffffff"
+    opacity="0.12"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cy"
+      values="350;320;350"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 4                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="80"
+    cy="350"
+    r="90"
+    fill="#22d3ee"
+    opacity="0.15"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="80;120;80"
+      dur="6.5s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="opacity"
+      values="0.15;0.27;0.15"
+      dur="5s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                   GLASS PANEL                    -->
+  <!-- ================================================= -->
+
+  <rect
+    x="60"
+    y="30"
+    width="780"
+    height="330"
+    rx="26"
+    fill="#ffffff"
+    opacity="0.10"
+  />
+
+  <rect
+    x="60"
+    y="30"
+    width="780"
+    height="330"
+    rx="26"
+    fill="none"
+    stroke="url(#panelStroke)"
+    stroke-width="1.5"
+  />
+
+
+  <!-- ================================================= -->
+  <!--                     SHIMMER                      -->
+  <!-- ================================================= -->
+
+  <g clip-path="url(#panelClip)">
+
+    <rect
+      x="-200"
+      y="30"
+      width="150"
+      height="330"
+      fill="url(#shine)"
+      transform="skewX(-20)"
+    >
+
+      <animate
+        attributeName="x"
+        values="-200;900"
+        dur="5s"
+        repeatCount="indefinite"
+      />
+
+    </rect>
+
+  </g>
+
+
+  <!-- ================================================= -->
+  <!--                       TITLE                       -->
+  <!-- ================================================= -->
+
+  <text
+    x="100"
+    y="72"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="1"
+  >
+    🛠️ TECH STACK
+  </text>
+
+
+  <line
+    x1="100"
+    y1="88"
+    x2="800"
+    y2="88"
+    stroke="#ffffff"
+    stroke-opacity="0.20"
+    stroke-width="1"
+  />
+
+
+  <!-- ================================================= -->
+  <!--                  PROGRAMMING                     -->
+  <!-- ================================================= -->
+
+  <text
+    x="105"
+    y="120"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="14"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="1"
+  >
+    💻 PROGRAMMING
+  </text>
+
+
+  <text
+    x="105"
+    y="148"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    Python
+  </text>
+
+  <text
+    x="220"
+    y="148"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    C
+  </text>
+
+  <text
+    x="290"
+    y="148"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    Java
+  </text>
+
+  <text
+    x="390"
+    y="148"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    JavaScript
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                    FRONTEND                      -->
+  <!-- ================================================= -->
+
+  <text
+    x="105"
+    y="185"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="14"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="1"
+  >
+    🌐 FRONTEND
+  </text>
+
+
+  <text
+    x="105"
+    y="213"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    HTML
+  </text>
+
+  <text
+    x="190"
+    y="213"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    CSS
+  </text>
+
+  <text
+    x="270"
+    y="213"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    React
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                     BACKEND                      -->
+  <!-- ================================================= -->
+
+  <text
+    x="470"
+    y="185"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="14"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="1"
+  >
+    ⚙️ BACKEND
+  </text>
+
+
+  <text
+    x="470"
+    y="213"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    Node.js
+  </text>
+
+  <text
+    x="585"
+    y="213"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    Django
+  </text>
+
+  <text
+    x="690"
+    y="213"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    Express
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                 DATABASE & TOOLS                 -->
+  <!-- ================================================= -->
+
+  <text
+    x="105"
+    y="252"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="14"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="1"
+  >
+    🗄️ DATABASE
+  </text>
+
+
+  <text
+    x="105"
+    y="280"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    MySQL
+  </text>
+
+  <text
+    x="200"
+    y="280"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    MongoDB
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                      TOOLS                       -->
+  <!-- ================================================= -->
+
+  <text
+    x="470"
+    y="252"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="14"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="1"
+  >
+    🔧 TOOLS &amp; CLOUD
+  </text>
+
+
+  <text
+    x="470"
+    y="280"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    Git
+  </text>
+
+  <text
+    x="540"
+    y="280"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    GitHub
+  </text>
+
+  <text
+    x="635"
+    y="280"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    VS Code
+  </text>
+
+  <text
+    x="750"
+    y="280"
+    font-family="monospace"
+    font-size="15"
+    fill="#e9e7ff"
+  >
+    AWS
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                     FOOT NOTE                    -->
+  <!-- ================================================= -->
+
+  <text
+    x="450"
+    y="325"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="13"
+    fill="#ffffff"
+    text-anchor="middle"
+    opacity="0.75"
+    letter-spacing="1"
+  >
+    BUILD • LEARN • EXPLORE • CREATE
+  </text>
+
+
+</svg>
