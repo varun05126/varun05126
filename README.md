@@ -85,16 +85,6 @@
 
 <br/>
 
-## 🌱 Currently Learning
-
-| 🚀 Area | 📚 Focus |
-| :---: | :--- |
-| 🐍 Python | Advanced Python & Automation |
-| 🌐 Full-Stack | Frontend + Backend Development |
-| 🤖 AI | Artificial Intelligence & Machine Learning |
-| 🧠 DSA | Data Structures & Algorithms |
-| 💻 Software Engineering | Clean & Scalable Code |
-
 <br/>
 
 <p align="center">
@@ -338,14 +328,6 @@
 </p>
 
 <br/>
-
-## 💭 Developer Quote
-
-<p align="center">
-
-  <b>"Consistency beats motivation."</b>
-
-</p>
 
 <br/>
 
