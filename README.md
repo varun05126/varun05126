@@ -214,6 +214,13 @@
     />
   </a>
 
+  <a href="https://github.com/varun05126/ai-skill-mapper">
+    <img
+      src="https://img.shields.io/badge/🤖_AI--SKILL--MAPPER-View_Repository-181717?style=for-the-badge&logo=github"
+      alt="AI Skill Mapper Repository"
+    />
+  </a>
+
   <a href="https://github.com/varun05126/capstone001">
     <img
       src="https://img.shields.io/badge/🚀_CAPSTONE001-View_Repository-181717?style=for-the-badge&logo=github"
