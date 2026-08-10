@@ -1,0 +1,129 @@
+<svg width="800" height="270" viewBox="0 0 800 270" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Typewriter clipping areas -->
+    <clipPath id="clipL1">
+      <rect x="30" y="25" width="0" height="34">
+        <animate
+          attributeName="width"
+          values="0;740;740;0"
+          keyTimes="0;0.1333;0.90;1"
+          dur="12s"
+          repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="clipL2">
+      <rect x="30" y="70" width="0" height="34">
+        <animate
+          attributeName="width"
+          values="0;0;600;600;0"
+          keyTimes="0;0.1667;0.30;0.90;1"
+          dur="12s"
+          repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="clipL3">
+      <rect x="30" y="115" width="0" height="34">
+        <animate
+          attributeName="width"
+          values="0;0;700;700;0"
+          keyTimes="0;0.3333;0.4667;0.90;1"
+          dur="12s"
+          repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="clipL4">
+      <rect x="30" y="160" width="0" height="34">
+        <animate
+          attributeName="width"
+          values="0;0;560;560;0"
+          keyTimes="0;0.50;0.6333;0.90;1"
+          dur="12s"
+          repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="clipL5">
+      <rect x="30" y="205" width="0" height="34">
+        <animate
+          attributeName="width"
+          values="0;0;430;430;0"
+          keyTimes="0;0.6667;0.80;0.90;1"
+          dur="12s"
+          repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="270" rx="15" fill="#0d1117"/>
+
+  <!-- Line 1 -->
+  <g clip-path="url(#clipL1)">
+    <text
+      x="30"
+      y="50"
+      fill="#58a6ff"
+      font-family="monospace"
+      font-size="22"
+      font-weight="600">
+      💬 Ask me about Python, C, Java &amp; Web Development
+    </text>
+  </g>
+
+  <!-- Line 2 -->
+  <g clip-path="url(#clipL2)">
+    <text
+      x="30"
+      y="95"
+      fill="#7ee787"
+      font-family="monospace"
+      font-size="22"
+      font-weight="600">
+      🌱 Currently learning Full-Stack &amp; Advanced Python
+    </text>
+  </g>
+
+  <!-- Line 3 -->
+  <g clip-path="url(#clipL3)">
+    <text
+      x="30"
+      y="140"
+      fill="#d2a8ff"
+      font-family="monospace"
+      font-size="22"
+      font-weight="600">
+      🎯 Interested in AI &amp; Real-World Problem Solving
+    </text>
+  </g>
+
+  <!-- Line 4 -->
+  <g clip-path="url(#clipL4)">
+    <text
+      x="30"
+      y="185"
+      fill="#ffa657"
+      font-family="monospace"
+      font-size="22"
+      font-weight="600">
+      🏫 Student at Vardhaman College of Engineering
+    </text>
+  </g>
+
+  <!-- Line 5 -->
+  <g clip-path="url(#clipL5)">
+    <text
+      x="30"
+      y="230"
+      fill="#f0f6fc"
+      font-family="monospace"
+      font-size="22"
+      font-weight="600">
+      ⚡ Consistency beats motivation.
+    </text>
+  </g>
+
+</svg>
