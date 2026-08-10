@@ -1,0 +1,243 @@
+<svg
+  width="900"
+  height="120"
+  viewBox="0 0 900 120"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a11cb"/>
+      <stop offset="50%" stop-color="#4757e6"/>
+      <stop offset="100%" stop-color="#2575fc"/>
+    </linearGradient>
+
+
+    <!-- ================= PANEL BORDER ================= -->
+
+    <linearGradient id="panelStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+
+      <stop
+        offset="0%"
+        stop-color="#ffffff"
+        stop-opacity="0.65"
+      >
+        <animate
+          attributeName="stop-opacity"
+          values="0.65;0.25;0.65"
+          dur="4s"
+          repeatCount="indefinite"
+        />
+      </stop>
+
+      <stop
+        offset="100%"
+        stop-color="#ffffff"
+        stop-opacity="0.10"
+      />
+
+    </linearGradient>
+
+
+    <!-- ================= SHINE ================= -->
+
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+
+      <stop
+        offset="0%"
+        stop-color="#ffffff"
+        stop-opacity="0"
+      />
+
+      <stop
+        offset="50%"
+        stop-color="#ffffff"
+        stop-opacity="0.30"
+      />
+
+      <stop
+        offset="100%"
+        stop-color="#ffffff"
+        stop-opacity="0"
+      />
+
+    </linearGradient>
+
+
+    <!-- ================= BOKEH ================= -->
+
+    <filter
+      id="bokehBlur"
+      x="-60%"
+      y="-60%"
+      width="220%"
+      height="220%"
+    >
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+
+
+    <!-- ================= CLIP ================= -->
+
+    <clipPath id="panelClip">
+
+      <rect
+        x="60"
+        y="20"
+        width="780"
+        height="80"
+        rx="22"
+      />
+
+    </clipPath>
+
+  </defs>
+
+
+  <!-- ================================================= -->
+  <!--                    BACKGROUND                     -->
+  <!-- ================================================= -->
+
+  <rect
+    width="900"
+    height="120"
+    fill="url(#bg)"
+  />
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 1                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="100"
+    cy="35"
+    r="90"
+    fill="#ffffff"
+    opacity="0.16"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="100;140;100"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="cy"
+      values="35;15;35"
+      dur="6s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 2                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="800"
+    cy="85"
+    r="100"
+    fill="#a78bfa"
+    opacity="0.20"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="800;765;800"
+      dur="9s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="cy"
+      values="85;105;85"
+      dur="7s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                   GLASS PANEL                    -->
+  <!-- ================================================= -->
+
+  <rect
+    x="60"
+    y="20"
+    width="780"
+    height="80"
+    rx="22"
+    fill="#ffffff"
+    opacity="0.10"
+  />
+
+
+  <rect
+    x="60"
+    y="20"
+    width="780"
+    height="80"
+    rx="22"
+    fill="none"
+    stroke="url(#panelStroke)"
+    stroke-width="1.5"
+  />
+
+
+  <!-- ================================================= -->
+  <!--                     SHIMMER                      -->
+  <!-- ================================================= -->
+
+  <g clip-path="url(#panelClip)">
+
+    <rect
+      x="-200"
+      y="20"
+      width="150"
+      height="80"
+      fill="url(#shine)"
+      transform="skewX(-20)"
+    >
+
+      <animate
+        attributeName="x"
+        values="-200;900"
+        dur="5s"
+        repeatCount="indefinite"
+      />
+
+    </rect>
+
+  </g>
+
+
+  <!-- ================================================= -->
+  <!--                       TITLE                       -->
+  <!-- ================================================= -->
+
+  <text
+    x="450"
+    y="70"
+    text-anchor="middle"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="1"
+  >
+    📈 CONTRIBUTION GRAPH
+  </text>
+
+
+</svg>
