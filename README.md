@@ -231,30 +231,7 @@
     />
   </a>
 
-  <a href="https://github.com/varun05126">
-    <img
-      src="https://img.shields.io/github/commit-activity/y/varun05126?style=for-the-badge&label=Commit%20Activity&color=2575fc"
-      alt="Commit Activity"
-    />
-  </a>
-
 </p>
-
-<p align="center">
-
-  <a href="https://github.com/varun05126">
-    <img
-      src="https://img.shields.io/github/last-commit/varun05126/varun05126?style=for-the-badge&label=Last%20Update&color=6a11cb"
-      alt="Last Update"
-    />
-  </a>
-
-  <a href="https://github.com/varun05126?tab=repositories">
-    <img
-      src="https://img.shields.io/github/repo-size/varun05126/varun05126?style=for-the-badge&label=Profile%20Repo%20Size&color=4757e6"
-      alt="Profile Repository Size"
-    />
-  </a>
 
 </p>
 
