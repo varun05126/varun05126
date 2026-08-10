@@ -87,22 +87,10 @@
 
 <p align="center">
   <img
-    src="/assets/currently-learning.svg"
+    src="./assets/currently-learning.svg"
     width="900"
     alt="Currently Learning"
   />
-</p>
-
-<p align="center">
-
-| 🚀 Area | 📚 Focus |
-| :---: | :--- |
-| 🐍 Python | Advanced Python & Automation |
-| 🌐 Full-Stack | Frontend + Backend Development |
-| 🤖 AI | Artificial Intelligence & Machine Learning |
-| 🧠 DSA | Data Structures & Algorithms |
-| 💻 Software Engineering | Clean & Scalable Code |
-
 </p>
 
 <br/>
