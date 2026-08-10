@@ -85,7 +85,15 @@
 
 <br/>
 
-## 🌱 Currently Learning
+<p align="center">
+  <img
+    src="./assets/currently-learning.svg"
+    width="900"
+    alt="Currently Learning"
+  />
+</p>
+
+<p align="center">
 
 | 🚀 Area | 📚 Focus |
 | :---: | :--- |
@@ -94,6 +102,8 @@
 | 🤖 AI | Artificial Intelligence & Machine Learning |
 | 🧠 DSA | Data Structures & Algorithms |
 | 💻 Software Engineering | Clean & Scalable Code |
+
+</p>
 
 <br/>
 
