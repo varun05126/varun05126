@@ -1,0 +1,303 @@
+<svg
+  width="900"
+  height="220"
+  viewBox="0 0 900 220"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a11cb"/>
+      <stop offset="50%" stop-color="#4757e6"/>
+      <stop offset="100%" stop-color="#2575fc"/>
+    </linearGradient>
+
+
+    <!-- ================= BORDER ================= -->
+
+    <linearGradient id="panelStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+
+      <stop
+        offset="0%"
+        stop-color="#ffffff"
+        stop-opacity="0.65"
+      >
+        <animate
+          attributeName="stop-opacity"
+          values="0.65;0.25;0.65"
+          dur="4s"
+          repeatCount="indefinite"
+        />
+      </stop>
+
+      <stop
+        offset="100%"
+        stop-color="#ffffff"
+        stop-opacity="0.10"
+      />
+
+    </linearGradient>
+
+
+    <!-- ================= SHINE ================= -->
+
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+
+    </linearGradient>
+
+
+    <!-- ================= BOKEH ================= -->
+
+    <filter
+      id="bokehBlur"
+      x="-60%"
+      y="-60%"
+      width="220%"
+      height="220%"
+    >
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+
+
+    <clipPath id="panelClip">
+
+      <rect
+        x="60"
+        y="25"
+        width="780"
+        height="170"
+        rx="26"
+      />
+
+    </clipPath>
+
+  </defs>
+
+
+  <!-- ================= BACKGROUND ================= -->
+
+  <rect
+    width="900"
+    height="220"
+    fill="url(#bg)"
+  />
+
+
+  <!-- ================= BOKEH ================= -->
+
+  <circle
+    cx="100"
+    cy="50"
+    r="95"
+    fill="#ffffff"
+    opacity="0.16"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="100;140;100"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="cy"
+      values="50;25;50"
+      dur="6s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <circle
+    cx="800"
+    cy="170"
+    r="110"
+    fill="#a78bfa"
+    opacity="0.20"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="800;765;800"
+      dur="9s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="cy"
+      values="170;195;170"
+      dur="7s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================= GLASS PANEL ================= -->
+
+  <rect
+    x="60"
+    y="25"
+    width="780"
+    height="170"
+    rx="26"
+    fill="#ffffff"
+    opacity="0.10"
+  />
+
+  <rect
+    x="60"
+    y="25"
+    width="780"
+    height="170"
+    rx="26"
+    fill="none"
+    stroke="url(#panelStroke)"
+    stroke-width="1.5"
+  />
+
+
+  <!-- ================= SHIMMER ================= -->
+
+  <g clip-path="url(#panelClip)">
+
+    <rect
+      x="-200"
+      y="25"
+      width="150"
+      height="170"
+      fill="url(#shine)"
+      transform="skewX(-20)"
+    >
+
+      <animate
+        attributeName="x"
+        values="-200;900"
+        dur="5s"
+        repeatCount="indefinite"
+      />
+
+    </rect>
+
+  </g>
+
+
+  <!-- ================= TITLE ================= -->
+
+  <text
+    x="450"
+    y="70"
+    text-anchor="middle"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="24"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="1"
+  >
+    📬 LET'S CONNECT
+  </text>
+
+
+  <!-- ================= SUBTITLE ================= -->
+
+  <text
+    x="450"
+    y="98"
+    text-anchor="middle"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="13"
+    fill="#dcd9ff"
+    letter-spacing="0.8"
+  >
+    Open to collaboration, projects &amp; opportunities
+  </text>
+
+
+  <!-- ================= EMAIL ================= -->
+
+  <text
+    x="145"
+    y="140"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="16"
+    font-weight="600"
+    fill="#ffffff"
+  >
+    ✉️  Email
+  </text>
+
+  <text
+    x="145"
+    y="163"
+    font-family="monospace"
+    font-size="12"
+    fill="#dcd9ff"
+  >
+    malthumkarvarun@gmail.com
+  </text>
+
+
+  <!-- ================= LINKEDIN ================= -->
+
+  <text
+    x="450"
+    y="140"
+    text-anchor="middle"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="16"
+    font-weight="600"
+    fill="#ffffff"
+  >
+    💼  LinkedIn
+  </text>
+
+  <text
+    x="450"
+    y="163"
+    text-anchor="middle"
+    font-family="monospace"
+    font-size="12"
+    fill="#dcd9ff"
+  >
+    varun-malthumkar
+  </text>
+
+
+  <!-- ================= GITHUB ================= -->
+
+  <text
+    x="755"
+    y="140"
+    text-anchor="middle"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="16"
+    font-weight="600"
+    fill="#ffffff"
+  >
+    🐙  GitHub
+  </text>
+
+  <text
+    x="755"
+    y="163"
+    text-anchor="middle"
+    font-family="monospace"
+    font-size="12"
+    fill="#dcd9ff"
+  >
+    @varun05126
+  </text>
+
+
+</svg>
