@@ -4,12 +4,6 @@
   <img src="./assets/glass-header.svg" width="100%" alt="Header"/>
 </p>
 
-<h1 align="center">Hi 👋, I'm Varun</h1>
-
-<h3 align="center">
-  💻 Software Developer • Full-Stack Developer • AI Enthusiast
-</h3>
-
 <p align="center">
   <img src="./assets/typing.svg" width="850" alt="Typing Animation"/>
 </p>
