@@ -219,13 +219,6 @@
 
   <a href="https://github.com/varun05126?tab=repositories">
     <img
-      src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fvarun05126&query=%24.public_repos&label=Public%20Repos&style=for-the-badge&color=6a11cb"
-      alt="Public Repositories"
-    />
-  </a>
-
-  <a href="https://github.com/varun05126?tab=repositories">
-    <img
       src="https://img.shields.io/github/stars/varun05126?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&label=Total%20Stars&color=4757e6"
       alt="Total Stars"
     />
