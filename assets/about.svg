@@ -1,0 +1,543 @@
+<svg
+  width="900"
+  height="330"
+  viewBox="0 0 900 330"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <linearGradient
+      id="bg"
+      x1="0%"
+      y1="0%"
+      x2="100%"
+      y2="100%"
+    >
+      <stop
+        offset="0%"
+        stop-color="#6a11cb"
+      />
+
+      <stop
+        offset="50%"
+        stop-color="#4757e6"
+      />
+
+      <stop
+        offset="100%"
+        stop-color="#2575fc"
+      />
+    </linearGradient>
+
+
+    <!-- ================= PANEL BORDER ================= -->
+
+    <linearGradient
+      id="panelStroke"
+      x1="0%"
+      y1="0%"
+      x2="100%"
+      y2="100%"
+    >
+
+      <stop
+        offset="0%"
+        stop-color="#ffffff"
+        stop-opacity="0.65"
+      >
+
+        <animate
+          attributeName="stop-opacity"
+          values="0.65;0.25;0.65"
+          dur="4s"
+          repeatCount="indefinite"
+        />
+
+      </stop>
+
+      <stop
+        offset="100%"
+        stop-color="#ffffff"
+        stop-opacity="0.10"
+      />
+
+    </linearGradient>
+
+
+    <!-- ================= SHINE ================= -->
+
+    <linearGradient
+      id="shine"
+      x1="0%"
+      y1="0%"
+      x2="100%"
+      y2="0%"
+    >
+
+      <stop
+        offset="0%"
+        stop-color="#ffffff"
+        stop-opacity="0"
+      />
+
+      <stop
+        offset="50%"
+        stop-color="#ffffff"
+        stop-opacity="0.28"
+      />
+
+      <stop
+        offset="100%"
+        stop-color="#ffffff"
+        stop-opacity="0"
+      />
+
+    </linearGradient>
+
+
+    <!-- ================= BOKEH BLUR ================= -->
+
+    <filter
+      id="bokehBlur"
+      x="-60%"
+      y="-60%"
+      width="220%"
+      height="220%"
+    >
+
+      <feGaussianBlur
+        stdDeviation="35"
+      />
+
+    </filter>
+
+
+    <!-- ================= PANEL CLIP ================= -->
+
+    <clipPath id="panelClip">
+
+      <rect
+        x="60"
+        y="30"
+        width="780"
+        height="270"
+        rx="26"
+      />
+
+    </clipPath>
+
+  </defs>
+
+
+  <!-- ================================================= -->
+  <!--                    BACKGROUND                     -->
+  <!-- ================================================= -->
+
+  <rect
+    width="900"
+    height="330"
+    fill="url(#bg)"
+  />
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 1                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="100"
+    cy="65"
+    r="100"
+    fill="#ffffff"
+    opacity="0.16"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="100;140;100"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="cy"
+      values="65;40;65"
+      dur="6s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 2                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="800"
+    cy="70"
+    r="110"
+    fill="#a78bfa"
+    opacity="0.20"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="800;765;800"
+      dur="9s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="cy"
+      values="70;100;70"
+      dur="7s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 3                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="760"
+    cy="280"
+    r="130"
+    fill="#ffffff"
+    opacity="0.12"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cy"
+      values="280;250;280"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                     BOKEH 4                      -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="80"
+    cy="275"
+    r="90"
+    fill="#22d3ee"
+    opacity="0.15"
+    filter="url(#bokehBlur)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="80;120;80"
+      dur="6.5s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="opacity"
+      values="0.15;0.27;0.15"
+      dur="5s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!--                   GLASS PANEL                    -->
+  <!-- ================================================= -->
+
+  <rect
+    x="60"
+    y="30"
+    width="780"
+    height="270"
+    rx="26"
+    fill="#ffffff"
+    opacity="0.10"
+  />
+
+
+  <rect
+    x="60"
+    y="30"
+    width="780"
+    height="270"
+    rx="26"
+    fill="none"
+    stroke="url(#panelStroke)"
+    stroke-width="1.5"
+  />
+
+
+  <!-- ================================================= -->
+  <!--                     SHIMMER                      -->
+  <!-- ================================================= -->
+
+  <g clip-path="url(#panelClip)">
+
+    <rect
+      x="-200"
+      y="30"
+      width="150"
+      height="270"
+      fill="url(#shine)"
+      transform="skewX(-20)"
+    >
+
+      <animate
+        attributeName="x"
+        values="-200;900"
+        dur="5s"
+        repeatCount="indefinite"
+      />
+
+    </rect>
+
+  </g>
+
+
+  <!-- ================================================= -->
+  <!--                  SECTION TITLE                   -->
+  <!-- ================================================= -->
+
+  <text
+    x="100"
+    y="72"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="1"
+  >
+    👨‍💻 ABOUT ME
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                  TITLE LINE                      -->
+  <!-- ================================================= -->
+
+  <line
+    x1="100"
+    y1="88"
+    x2="800"
+    y2="88"
+    stroke="#ffffff"
+    stroke-opacity="0.20"
+    stroke-width="1"
+  />
+
+
+  <!-- ================================================= -->
+  <!--                     ITEM 1                       -->
+  <!-- ================================================= -->
+
+  <text
+    x="105"
+    y="120"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="16"
+    fill="#ffffff"
+  >
+    🎓
+  </text>
+
+  <text
+    x="140"
+    y="120"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="15"
+    font-weight="600"
+    fill="#ffffff"
+  >
+    Student
+  </text>
+
+  <text
+    x="245"
+    y="120"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="14"
+    fill="#dcd9ff"
+  >
+    Vardhaman College of Engineering, Telangana
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                     ITEM 2                       -->
+  <!-- ================================================= -->
+
+  <text
+    x="105"
+    y="155"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="16"
+    fill="#ffffff"
+  >
+    💻
+  </text>
+
+  <text
+    x="140"
+    y="155"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="15"
+    font-weight="600"
+    fill="#ffffff"
+  >
+    Developer
+  </text>
+
+  <text
+    x="245"
+    y="155"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="14"
+    fill="#dcd9ff"
+  >
+    Software Engineering &amp; Full-Stack Development
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                     ITEM 3                       -->
+  <!-- ================================================= -->
+
+  <text
+    x="105"
+    y="190"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="16"
+    fill="#ffffff"
+  >
+    🐍
+  </text>
+
+  <text
+    x="140"
+    y="190"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="15"
+    font-weight="600"
+    fill="#ffffff"
+  >
+    Learning
+  </text>
+
+  <text
+    x="245"
+    y="190"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="14"
+    fill="#dcd9ff"
+  >
+    Advanced Python &amp; Full-Stack Development
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                     ITEM 4                       -->
+  <!-- ================================================= -->
+
+  <text
+    x="105"
+    y="225"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="16"
+    fill="#ffffff"
+  >
+    🤖
+  </text>
+
+  <text
+    x="140"
+    y="225"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="15"
+    font-weight="600"
+    fill="#ffffff"
+  >
+    Exploring
+  </text>
+
+  <text
+    x="245"
+    y="225"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="14"
+    fill="#dcd9ff"
+  >
+    Artificial Intelligence &amp; Machine Learning
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                     ITEM 5                       -->
+  <!-- ================================================= -->
+
+  <text
+    x="105"
+    y="260"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="16"
+    fill="#ffffff"
+  >
+    🧠
+  </text>
+
+  <text
+    x="140"
+    y="260"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="15"
+    font-weight="600"
+    fill="#ffffff"
+  >
+    Passionate About
+  </text>
+
+  <text
+    x="285"
+    y="260"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="14"
+    fill="#dcd9ff"
+  >
+    Data Structures &amp; Algorithms
+  </text>
+
+
+  <!-- ================================================= -->
+  <!--                    QUOTE                          -->
+  <!-- ================================================= -->
+
+  <text
+    x="450"
+    y="288"
+    font-family="Segoe UI, Helvetica, Arial, sans-serif"
+    font-size="13"
+    font-style="italic"
+    fill="#ffffff"
+    text-anchor="middle"
+    opacity="0.85"
+  >
+    ⚡ "Consistency beats motivation."
+  </text>
+
+
+</svg>
